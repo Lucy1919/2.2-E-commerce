@@ -99,18 +99,15 @@ li {
     left: 0;
     right: 0;
     bottom: 0;  
-    z-index: 100;
+    z-index: 100;   
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    transition: all 300ms ease;
-    opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 
 .menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
+    display: flex;
 }
 
 .menu__links {
