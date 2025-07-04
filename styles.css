@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -112,6 +112,11 @@ li {
 .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .menu__links {
@@ -394,12 +399,46 @@ FEATURES
     padding: 0 8px; 
   }
 
-  @media (max-width: 550px) {
-    .nav__links {
-        display: none;
+  /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+  @media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+       width: 50%; 
     }
   }
 
-  .btn__menu {
-    display: block;
+  /* SMALL PHONES, LARGE SMARTPHONES  */
+
+  @media (max-width: 550px) {
+    .btn__menu {
+        display: block;
+     }    
+
+    .nav__links {
+        display: none;
+    }
+
+    .highlight {
+        width: 100%;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
+    
+    }
   }
